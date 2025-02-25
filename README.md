@@ -1,6 +1,6 @@
 # 🔧 Tech Support Engineer | Problem Solver
 
-<div align="center">
+<div>
   
 ## 💡 My Tech Philosophy
 > "Technology should empower - when it fails, **empathy** becomes the ultimate troubleshooting tool."
