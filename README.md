@@ -4,14 +4,22 @@
   
 ```mermaid
 graph TD
-    A[User Report] --> B{Diagnosis}
-    B -->|Hardware| C[🖥️ Physical Check]
-    B -->|Software| D[📀 System Analysis]
-    B -->|Network| E[🌐 Connectivity Test]
-    C --> F[Solution Implementation]
-    D --> F
-    E --> F
-    F --> G[✅ Problem Solved!]
+    TARDIS["fa:fa-tardis TARDIS Tech Support"] -->|Sonic Screwdriver| DIAG[fa:fa-wrench Diagnostics]
+    TARDIS -->|Time Vortex| MONITOR[fa:fa-desktop Live Monitoring]
+    TARDIS -->|Psychic Paper| DOC[fa:fa-file-alt Documentation]
+    
+    DIAG --> ERRO{{"fa:fa-bug EXTERMINATE!<br/>Error: EX-TER-MIN-ATE-404"}}
+    MONITOR --> ALERT["fa:fa-bell Dalek Alert:<br/>CPU Overload Detected"]
+    DOC --> SOLU((("fa:fa-check-circle Solution Implemented")))
+    
+    ERRO -.->|Time Loop| TARDIS
+    ALERT -.->|Regeneration| TARDIS
+    SOLU --> TARDIS
+    
+    style TARDIS fill:#003B6F,color:white
+    style ERRO fill:#000000,color:red
+    style ALERT fill:#8B0000,color:white
+    style SOLU fill:#006400,color:white
 ```
 
 </div>
